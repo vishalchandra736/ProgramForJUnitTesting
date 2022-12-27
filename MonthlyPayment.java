@@ -10,17 +10,15 @@ public class MonthlyPayment {
         payment = (P * r) / (1 - Math.pow((1 + r), (-n)));
         return payment;
     }
-
     public static void main(String[] args) {
-        double P, R, Y;
+        int P, R, Y;
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the Principal Amount : ");
+        System.out.println("Enter the loan Principal Amount : ");
         P = scan.nextInt();
         System.out.println("Enter the Monthly Interest Rate : ");
         R = scan.nextInt();
         System.out.println("Enter the Year to pay off : ");
         Y = scan.nextInt();
         System.out.println("Monthly Payment is : " + monthlyPayment(P, R, Y));
-
     }
 }
